@@ -1,11 +1,11 @@
 import React from "react";
-import RectangleBox from "./rectangle-box/rectangle-box-component";
-
+//import RectangleBox from "./rectangle-box/rectangle-box-component";
+import Symbol from "./symbol/symbol-component";
 function App() {
   return (
-    <>
-      <RectangleBox />
-    </>
+      <Symbol />
+      //<RectangleBox />
+    
   );
 }
 
