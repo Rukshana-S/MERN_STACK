@@ -19,6 +19,7 @@ const TrustedbyComponent = () => {
           <span className="numbers">100+</span>
           <span className="details">COLLEGES</span>
           <div className="bottom-bar cyan"></div>
+          
         </div>
 
         {/* CARD 2 */}

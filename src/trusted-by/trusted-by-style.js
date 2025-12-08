@@ -84,10 +84,10 @@ export const TrustedByStyle = styled.div`
 
   /* Bottom Highlight Bar */
   .bottom-bar {
-    position: absolute;
+    position: relative;
     bottom: 0;
-    width: 85%;
-    height: 15px;
+    width: 110%;
+    height: 200px;
     border-radius: 0 0 10px 10px;
   }
 

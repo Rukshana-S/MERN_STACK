@@ -2,20 +2,7 @@ import styled from "styled-components";
 
 export const SymbolStyle = styled.div`
 
-  /* GLOBAL FIX — Prevent horizontal scrolling */
-  * {
-    box-sizing: border-box;
-  }
-
-  html, body {
-    overflow-x: hidden;
-    max-width: 100%;
-  }
-
-  width: 100%;
-  font-family: "Poppins", sans-serif;
-  background: #fff;
-
+  
   /* ---------------------------------------------------------
       HERO SECTION
   ---------------------------------------------------------- */
@@ -418,6 +405,207 @@ export const SymbolStyle = styled.div`
         left: 0;
     }
 }
+padding: 40px 0;
+  width: 100%;
+ 
+  .title {
+  margin-top:70px;
+  color: black;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 70px;
+  }
+
+  .parent {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .child {
+    position: relative;
+    width: 260px;
+    height: 230px;
+
+    background: #fff;
+    border-radius: 12px;
+    text-align: center;
+
+    padding-top: 60px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  /* Colored Top Borders */
+  .cyan { border-top: 10px solid #00c4b4; }
+  .blue { border-top: 10px solid #00a9e0; }
+  .orange { border-top: 10px solid #f2a33c; }
+  .red { border-top: 10px solid #ff4c4c; }
+
+  /* Circular Badge */
+  .icon-badge {
+    position: absolute;
+    top: -40px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: white;
+    border: 8px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: inherit; 
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.15);
+  }
+
+  .cyan.icon-badge { border-color: #00c4b4; color: #00c4b4; }
+  .blue.icon-badge { border-color: #00a9e0; color: #00a9e0; }
+  .orange.icon-badge { border-color: #f2a33c; color: #f2a33c; }
+  .red.icon-badge { border-color: #ff4c4c; color: #ff4c4c; }
+
+  /* Numbers & text */
+  .numbers {
+    font-size: 40px;
+    font-weight: 700;
+    color: #555;
+    margin-top: 10px;
+  }
+
+  .details {
+    margin-top: 6px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #777;
+    line-height: 1.3;
+  }
+
+  /* Bottom Highlight Bar */
+  .bottom-bar {
+    position: absolute;
+    bottom: 0;
+    width: 85%;
+    height: 15px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .cyan.bottom-bar { background: #00c4b4; }
+  .blue.bottom-bar { background: #00a9e0; }
+  .orange.bottom-bar { background: #f2a33c; }
+  .red.bottom-bar { background: #ff4c4c; }
+
+  /* Responsive */
+  @media (max-width: 800px) {
+    .parent {
+      gap: 40px;
+    }
+
+    .child {
+      width: 240px;
+      height: 220px;
+    }
+  }
+.title{
+    text-align:center;
+    font-size:40px;
+    margin-top:30px;
+    color:black;
+    margin-bottom:20px;
+}
+
+.para{
+    text-align:center;
+    font-size:20px;
+    margin-top:20px;
+    color:grey;
+}
+
+.title1,.title2,.title3,.title4,.title5,.title6{
+    margin-top:10px;
+    margin-bottom:20px;
+    font-weight:bold;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: rgb(119, 119, 119);
+    
+}
+
+.box{
+    color:black;
+    margin-left:10px;
+    margin-right:10px;
+    padding:10px;
+    
+}
+.para1, .para2, .para3, .para4, .para5, .para6{
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(86, 102, 131);}
+.box1{
+   max-width: 2000px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:30px;
+    margin-bottom:50px;
+}
+
+.box2{
+    max-width: 2000px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+.box1-1,.box1-2,.box1-3,.box1-4,.box2-2,.box2-3{
+    // width:25%;
+    // border-radius:10px;
+    // box-shadow:0 4px 8px rgba(0,0,0,0.1);   
+    // padding:20px;
+    // border-top :10px solid lightgrey;
+        border-top: 4px solid;
+    display: flex;
+    max-width: 350px;
+    gap: 15px;
+    flex-direction: column;
+    border-radius: 0px 0px 10px 10px;
+    padding: 1.5rem;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    
+}
+.box1-1{
+    border-color: rgb(68, 178, 179);
+}
+.box1-2{
+    border-color: rgb(239, 175, 75);
+}
+.box1-3{
+    border-color: rgb(0, 189, 235);
+}
+.box1-4{
+    border-color: rgb(134, 74, 249);
+}
+.box2-2{
+    border-color: rgb(252, 41, 71);
+}
+.box2-3{
+    border-color: rgb(50, 199, 102);
+}
+
+.icon{
+display:flex;
+gap:20px;
+}
+
  .getintouch-outer-container {
     margin-top: 3rem;
     background-color: rgba(252, 41, 71, 0.875);
